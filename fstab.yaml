@@ -1,4 +1,4 @@
 mountpoints:
   /:
-    url: https://content.da.live/aemdemos/ec-da-trial/
+    url: https://content.da.live/aemdemos/hmehta-test-da-1/
     type: markup
