@@ -1,0 +1,18 @@
+/* Columns Brands - Component-specific tokens */
+
+.columns-brands {
+  /* Layout tokens */
+  --columns-brands-padding: var(--spacing-3xl) 0;
+  --columns-brands-gap: var(--spacing-2xl);
+  --columns-brands-align: center;
+
+  /* Image tokens */
+  --columns-brands-image-height: 48px;
+  --columns-brands-image-filter: grayscale(100%);
+  --columns-brands-image-opacity: 0.7;
+  --columns-brands-image-hover-filter: grayscale(0%);
+  --columns-brands-image-hover-opacity: 1;
+
+  /* Transition tokens */
+  --columns-brands-transition: var(--transition-base);
+}

@@ -1,0 +1,31 @@
+/* Hero Positivus - Component-specific tokens */
+
+.hero-positivus {
+  /* Layout tokens */
+  --hero-positivus-padding-mobile: var(--spacing-2xl) var(--spacing-lg);
+  --hero-positivus-padding-desktop: var(--spacing-4xl) var(--spacing-xl);
+  --hero-positivus-min-height: 500px;
+  --hero-positivus-max-width: var(--max-width-container);
+
+  /* Typography tokens */
+  --hero-positivus-heading-size-mobile: var(--font-size-4xl);
+  --hero-positivus-heading-size-desktop: var(--font-size-5xl);
+  --hero-positivus-heading-weight: var(--font-weight-medium);
+  --hero-positivus-heading-line-height: var(--line-height-tight);
+  --hero-positivus-heading-color: var(--positivus-text-dark);
+
+  --hero-positivus-body-size: var(--font-size-md);
+  --hero-positivus-body-color: var(--positivus-text-dark);
+  --hero-positivus-body-line-height: var(--line-height-normal);
+
+  /* Button tokens */
+  --hero-positivus-button-bg: var(--positivus-primary-dark);
+  --hero-positivus-button-color: var(--positivus-primary-white);
+  --hero-positivus-button-padding: var(--spacing-md) var(--spacing-xl);
+  --hero-positivus-button-radius: var(--radius-lg);
+  --hero-positivus-button-hover-bg: var(--positivus-primary-dark);
+
+  /* Grid/Flex tokens */
+  --hero-positivus-grid-gap: var(--spacing-2xl);
+  --hero-positivus-content-gap: var(--spacing-lg);
+}

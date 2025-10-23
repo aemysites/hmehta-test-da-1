@@ -1,0 +1,39 @@
+/* Import component-specific tokens */
+@import './columns-brands-tokens.css';
+
+/* Columns Brands block styles */
+
+.columns-brands {
+  padding: var(--columns-brands-padding);
+}
+
+.columns-brands > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: var(--columns-brands-align);
+  justify-content: center;
+  gap: var(--columns-brands-gap);
+}
+
+.columns-brands > div > div {
+  flex: 0 0 auto;
+}
+
+.columns-brands img {
+  height: var(--columns-brands-image-height);
+  width: auto;
+  filter: var(--columns-brands-image-filter);
+  opacity: var(--columns-brands-image-opacity);
+  transition: var(--columns-brands-transition);
+}
+
+.columns-brands img:hover {
+  filter: var(--columns-brands-image-hover-filter);
+  opacity: var(--columns-brands-image-hover-opacity);
+}
+
+@media (width >= 900px) {
+  .columns-brands > div {
+    justify-content: space-between;
+  }
+}

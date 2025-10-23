@@ -39,6 +39,58 @@
   /* nav height */
   --nav-height: 64px;
   --header-height: var(--nav-height);
+
+  /* === POSITIVUS DESIGN TOKENS === */
+
+  /* Brand Colors */
+  --positivus-primary-green: #b9ff66;
+  --positivus-primary-dark: #191a23;
+  --positivus-primary-white: #fff;
+  --positivus-grey: #f3f3f3;
+
+  /* Text Colors */
+  --positivus-text-dark: #000;
+  --positivus-text-muted: #525252;
+
+  /* Background Colors */
+  --positivus-bg-green: #b9ff66;
+  --positivus-bg-dark: #191a23;
+  --positivus-bg-light: #f3f3f3;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 2.5rem;
+  --spacing-3xl: 3rem;
+  --spacing-4xl: 4rem;
+  --spacing-5xl: 5rem;
+  --spacing-6xl: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.875rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 2.25rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* Grid */
+  --grid-gap: 2rem;
+  --grid-gap-sm: 1rem;
+  --grid-gap-lg: 3rem;
 }
 
 /* fallback fonts */

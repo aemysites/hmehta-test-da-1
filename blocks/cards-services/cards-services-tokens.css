@@ -1,0 +1,42 @@
+/* Cards Services - Component-specific tokens */
+
+.cards-services {
+  /* Layout tokens */
+  --cards-services-grid-columns: repeat(auto-fill, minmax(280px, 1fr));
+  --cards-services-grid-gap: var(--spacing-xl);
+  --cards-services-padding: var(--spacing-2xl) 0;
+
+  /* Card tokens */
+  --cards-services-card-bg: var(--positivus-bg-light);
+  --cards-services-card-border: 1px solid var(--positivus-primary-dark);
+  --cards-services-card-border-bottom: 5px solid var(--positivus-primary-dark);
+  --cards-services-card-radius: var(--radius-xl);
+  --cards-services-card-padding: var(--spacing-2xl);
+  --cards-services-card-shadow: none;
+
+  /* Card with green background variant */
+  --cards-services-card-green-bg: var(--positivus-bg-green);
+  --cards-services-card-dark-bg: var(--positivus-bg-dark);
+
+  /* Image tokens */
+  --cards-services-image-height: 120px;
+  --cards-services-image-margin: 0 0 var(--spacing-lg) 0;
+
+  /* Typography tokens */
+  --cards-services-heading-size: var(--font-size-xl);
+  --cards-services-heading-weight: var(--font-weight-medium);
+  --cards-services-heading-color: var(--positivus-text-dark);
+  --cards-services-heading-margin: 0 0 var(--spacing-md) 0;
+
+  --cards-services-body-size: var(--font-size-base);
+  --cards-services-body-color: var(--positivus-text-dark);
+  --cards-services-body-line-height: var(--line-height-relaxed);
+
+  /* Link tokens */
+  --cards-services-link-color: var(--positivus-text-dark);
+  --cards-services-link-decoration: none;
+  --cards-services-link-hover-color: var(--positivus-text-dark);
+
+  /* Transition tokens */
+  --cards-services-transition: var(--transition-base);
+}

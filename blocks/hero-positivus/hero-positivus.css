@@ -1,0 +1,76 @@
+/* Import component-specific tokens */
+@import './hero-positivus-tokens.css';
+
+/* Hero Positivus block styles */
+
+.hero-container .hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-positivus {
+  position: relative;
+  padding: var(--hero-positivus-padding-mobile);
+  min-height: var(--hero-positivus-min-height);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--hero-positivus-grid-gap);
+  align-items: center;
+}
+
+.hero-positivus > div {
+  max-width: var(--hero-positivus-max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-positivus h1 {
+  font-size: var(--hero-positivus-heading-size-mobile);
+  font-weight: var(--hero-positivus-heading-weight);
+  line-height: var(--hero-positivus-heading-line-height);
+  color: var(--hero-positivus-heading-color);
+  margin: 0 0 var(--hero-positivus-content-gap);
+}
+
+.hero-positivus p {
+  font-size: var(--hero-positivus-body-size);
+  color: var(--hero-positivus-body-color);
+  line-height: var(--hero-positivus-body-line-height);
+  margin: 0 0 var(--hero-positivus-content-gap);
+}
+
+.hero-positivus a.button {
+  background-color: var(--hero-positivus-button-bg);
+  color: var(--hero-positivus-button-color);
+  padding: var(--hero-positivus-button-padding);
+  border-radius: var(--hero-positivus-button-radius);
+  text-decoration: none;
+  display: inline-block;
+  transition: var(--transition-base);
+}
+
+.hero-positivus a.button:hover {
+  background-color: var(--hero-positivus-button-hover-bg);
+  opacity: 0.9;
+}
+
+.hero-positivus picture {
+  display: block;
+}
+
+.hero-positivus img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (width >= 900px) {
+  .hero-positivus {
+    padding: var(--hero-positivus-padding-desktop);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-positivus h1 {
+    font-size: var(--hero-positivus-heading-size-desktop);
+  }
+}
