@@ -1,0 +1,26 @@
+/* Hero CTA Component Tokens */
+
+.hero-cta {
+  /* Layout */
+  --hero-cta-padding-block: var(--spacing-4xl);
+  --hero-cta-padding-inline: var(--spacing-xl);
+  --hero-cta-min-height: 350px;
+  --hero-cta-max-width: var(--container-max-width);
+  --hero-cta-gap: var(--spacing-2xl);
+  --hero-cta-border-radius: var(--border-radius-2xl);
+
+  /* Colors */
+  --hero-cta-bg-color: var(--color-secondary-grey);
+  --hero-cta-text-color: var(--color-text-primary-dark);
+
+  /* Typography */
+  --hero-cta-heading-font-size: var(--heading-font-size-xl);
+  --hero-cta-heading-font-weight: var(--font-weight-medium);
+  --hero-cta-text-font-size: var(--body-font-size-m);
+
+  /* Button */
+  --hero-cta-button-bg: var(--color-primary-black);
+  --hero-cta-button-color: var(--color-primary-white);
+  --hero-cta-button-padding: var(--spacing-lg) var(--spacing-2xl);
+  --hero-cta-button-border-radius: var(--border-radius-lg);
+}

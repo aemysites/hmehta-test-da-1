@@ -1,0 +1,25 @@
+/* Cards Team Component Tokens */
+
+.cards-team {
+  /* Layout */
+  --cards-team-padding-block: var(--spacing-4xl);
+  --cards-team-padding-inline: var(--spacing-xl);
+  --cards-team-gap: var(--spacing-xl);
+  --cards-team-min-card-width: 260px;
+
+  /* Card Styling */
+  --cards-team-card-padding: var(--spacing-xl);
+  --cards-team-card-border-radius: var(--border-radius-2xl);
+  --cards-team-card-border: var(--border-width-thin) solid var(--color-border-dark);
+  --cards-team-card-bg: var(--color-bg-primary);
+
+  /* Image */
+  --cards-team-image-size: 80px;
+  --cards-team-image-border-radius: var(--border-radius-full);
+
+  /* Typography */
+  --cards-team-name-font-size: var(--heading-font-size-s);
+  --cards-team-name-font-weight: var(--font-weight-medium);
+  --cards-team-role-font-size: var(--body-font-size-s);
+  --cards-team-text-font-size: var(--body-font-size-s);
+}

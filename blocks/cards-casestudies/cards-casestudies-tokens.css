@@ -1,0 +1,18 @@
+/* Cards Case Studies Component Tokens */
+
+.cards-casestudies {
+  /* Layout */
+  --cards-casestudies-padding-block: var(--spacing-4xl);
+  --cards-casestudies-padding-inline: var(--spacing-xl);
+  --cards-casestudies-gap: var(--spacing-xl);
+  --cards-casestudies-min-card-width: 400px;
+
+  /* Card Styling */
+  --cards-casestudies-card-padding: var(--spacing-2xl);
+  --cards-casestudies-card-border-radius: var(--border-radius-2xl);
+  --cards-casestudies-card-bg: var(--color-primary-black);
+
+  /* Typography */
+  --cards-casestudies-text-color: var(--color-text-secondary-light);
+  --cards-casestudies-text-font-size: var(--body-font-size-m);
+}

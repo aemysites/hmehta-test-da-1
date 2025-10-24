@@ -1,0 +1,48 @@
+/* Import component-specific tokens */
+@import './columns-brands-tokens.css';
+
+.columns-brands {
+  padding: var(--columns-brands-padding-block) var(--columns-brands-padding-inline);
+  background-color: var(--columns-brands-bg-color);
+}
+
+.columns-brands > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--columns-brands-gap);
+  max-width: var(--columns-brands-max-width);
+  margin: 0 auto;
+}
+
+.columns-brands img {
+  max-width: var(--columns-brands-logo-max-width);
+  height: var(--columns-brands-logo-height);
+  width: auto;
+  object-fit: contain;
+  opacity: var(--columns-brands-logo-opacity);
+  filter: var(--columns-brands-logo-filter);
+  transition: opacity var(--columns-brands-logo-transition),
+              filter var(--columns-brands-logo-transition);
+}
+
+.columns-brands img:hover {
+  opacity: var(--columns-brands-logo-opacity-hover);
+  filter: var(--columns-brands-logo-filter-hover);
+}
+
+.columns-brands > div > div {
+  flex: 0 0 auto;
+}
+
+.columns-brands > div > .columns-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-brands > div {
+    gap: var(--columns-brands-gap);
+  }
+}

@@ -1,0 +1,50 @@
+/* Cards Services Component Tokens */
+
+.cards-services {
+  /* Layout */
+  --cards-services-padding-block: var(--spacing-4xl);
+  --cards-services-padding-inline: var(--spacing-xl);
+  --cards-services-gap: var(--spacing-xl);
+  --cards-services-max-width: var(--container-max-width);
+  --cards-services-min-card-width: 280px;
+
+  /* Colors */
+  --cards-services-bg-color: var(--color-bg-primary);
+  --cards-services-card-bg-light: var(--color-secondary-grey);
+  --cards-services-card-bg-accent: var(--color-primary-green);
+  --cards-services-card-bg-dark: var(--color-primary-black);
+
+  /* Card Styling */
+  --cards-services-card-padding: var(--spacing-2xl);
+  --cards-services-card-border-radius: var(--border-radius-2xl);
+  --cards-services-card-border: var(--border-width-thin) solid var(--color-border-dark);
+
+  /* Typography */
+  --cards-services-heading-font-size: var(--heading-font-size-m);
+  --cards-services-heading-font-weight: var(--font-weight-medium);
+  --cards-services-heading-line-height: var(--line-height-tight);
+  --cards-services-heading-bg: var(--color-primary-green);
+  --cards-services-heading-padding: var(--spacing-xs) var(--spacing-md);
+  --cards-services-heading-border-radius: var(--border-radius-md);
+  --cards-services-heading-display: inline-block;
+
+  --cards-services-text-font-size: var(--body-font-size-m);
+  --cards-services-text-line-height: var(--line-height-normal);
+  --cards-services-text-color: var(--color-text-primary-dark);
+
+  /* Link/CTA */
+  --cards-services-link-color: var(--color-text-primary-dark);
+  --cards-services-link-hover-color: var(--color-primary-green);
+  --cards-services-link-transition: var(--transition-normal);
+
+  /* Icon/Image */
+  --cards-services-icon-size: 40px;
+  --cards-services-icon-margin-bottom: var(--spacing-lg);
+}
+
+@media (width >= 900px) {
+  .cards-services {
+    --cards-services-gap: var(--spacing-2xl);
+    --cards-services-min-card-width: 320px;
+  }
+}

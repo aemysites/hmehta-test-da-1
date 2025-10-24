@@ -1,0 +1,29 @@
+/* Import component-specific tokens */
+@import './cards-casestudies-tokens.css';
+
+.cards-casestudies {
+  padding: var(--cards-casestudies-padding-block) var(--cards-casestudies-padding-inline);
+}
+
+.cards-casestudies > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cards-casestudies-min-card-width), 1fr));
+  gap: var(--cards-casestudies-gap);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.cards-casestudies > ul > li {
+  border-radius: var(--cards-casestudies-card-border-radius);
+  background-color: var(--cards-casestudies-card-bg);
+  padding: var(--cards-casestudies-card-padding);
+  color: var(--cards-casestudies-text-color);
+}
+
+.cards-casestudies .cards-card-body p {
+  font-size: var(--cards-casestudies-text-font-size);
+  color: var(--cards-casestudies-text-color);
+}

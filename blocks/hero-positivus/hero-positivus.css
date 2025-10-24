@@ -1,0 +1,85 @@
+/* Import component-specific tokens */
+@import './hero-positivus-tokens.css';
+
+.hero-container .hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-positivus {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--hero-positivus-gap);
+  padding: var(--hero-positivus-padding-block) var(--hero-positivus-padding-inline);
+  background-color: var(--hero-positivus-bg-color);
+  min-height: var(--hero-positivus-min-height);
+  align-items: center;
+}
+
+.hero-positivus > div {
+  max-width: var(--hero-positivus-max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Background image in row 2 */
+.hero-positivus > div:nth-child(2) {
+  display: none; /* Hide background image row if present */
+}
+
+/* Content in row 3 */
+.hero-positivus > div:nth-child(3) {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--hero-positivus-gap);
+  align-items: center;
+}
+
+.hero-positivus h1,
+.hero-positivus h2,
+.hero-positivus h3 {
+  font-size: var(--hero-positivus-heading-font-size);
+  font-weight: var(--hero-positivus-heading-font-weight);
+  line-height: var(--hero-positivus-heading-line-height);
+  color: var(--hero-positivus-heading-color);
+  margin: 0;
+}
+
+.hero-positivus p {
+  font-size: var(--hero-positivus-text-font-size);
+  line-height: var(--hero-positivus-text-line-height);
+  color: var(--hero-positivus-text-color);
+  margin: var(--spacing-lg) 0;
+}
+
+.hero-positivus a.button {
+  background-color: var(--hero-positivus-button-bg);
+  color: var(--hero-positivus-button-color);
+  padding: var(--hero-positivus-button-padding);
+  border-radius: var(--hero-positivus-button-border-radius);
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color var(--hero-positivus-button-transition);
+  border: none;
+  font-weight: var(--font-weight-regular);
+}
+
+.hero-positivus a.button:hover {
+  background-color: var(--hero-positivus-button-hover-bg);
+}
+
+.hero-positivus img {
+  max-width: var(--hero-positivus-illustration-max-width);
+  width: var(--hero-positivus-illustration-width);
+  height: auto;
+}
+
+@media (width >= 900px) {
+  .hero-positivus > div:nth-child(3) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-positivus {
+    padding: var(--hero-positivus-padding-block) var(--hero-positivus-padding-inline);
+  }
+}

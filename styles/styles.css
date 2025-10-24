@@ -39,6 +39,69 @@
   /* nav height */
   --nav-height: 64px;
   --header-height: var(--nav-height);
+
+  /* ===== POSITIVUS DESIGN TOKENS ===== */
+
+  /* Primary Brand Colors */
+  --color-primary-green: #B9FF66;
+  --color-primary-black: #191A23;
+  --color-primary-dark: #000000;
+  --color-primary-white: #FFFFFF;
+
+  /* Secondary Colors */
+  --color-secondary-grey: #F3F3F3;
+  --color-secondary-grey-dark: #292A32;
+  --color-secondary-grey-light: #F8F8F8;
+
+  /* Semantic Colors */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-dark: #191A23;
+  --color-bg-light: #F3F3F3;
+  --color-bg-accent: #B9FF66;
+
+  --color-text-primary-dark: #000000;
+  --color-text-secondary-light: #FFFFFF;
+  --color-text-muted: #666666;
+
+  --color-border-light: #E5E5E5;
+  --color-border-dark: #191A23;
+
+  /* Font Families */
+  --font-family-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.5rem;      /* 8px */
+  --spacing-sm: 0.75rem;     /* 12px */
+  --spacing-md: 1rem;        /* 16px */
+  --spacing-lg: 1.5rem;      /* 24px */
+  --spacing-xl: 2rem;        /* 32px */
+  --spacing-2xl: 2.5rem;     /* 40px */
+  --spacing-3xl: 3rem;       /* 48px */
+  --spacing-4xl: 4rem;       /* 64px */
+  --spacing-5xl: 5rem;       /* 80px */
+  --spacing-6xl: 6rem;       /* 96px */
+
+  /* Border Radius */
+  --border-radius-sm: 0.25rem;   /* 4px */
+  --border-radius-md: 0.5rem;    /* 8px */
+  --border-radius-lg: 0.875rem;  /* 14px */
+  --border-radius-xl: 1.25rem;   /* 20px */
+  --border-radius-2xl: 2rem;     /* 32px */
+  --border-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  /* Container */
+  --container-max-width: 1240px;
 }
 
 /* fallback fonts */

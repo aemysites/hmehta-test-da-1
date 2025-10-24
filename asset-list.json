@@ -1,0 +1,25 @@
+{
+  "assets": [
+    "content/images/home/hero-illustration.svg",
+    "content/images/home/icon-seo.png",
+    "content/images/home/icon-ppc.png",
+    "content/images/home/icon-social.png",
+    "content/images/home/icon-content.png",
+    "content/images/home/icon-email.png",
+    "content/images/home/icon-analytics.png",
+    "content/images/home/logo-amazon.svg",
+    "content/images/home/logo-dribbble.svg",
+    "content/images/home/logo-hubspot.svg",
+    "content/images/home/logo-netflix.svg",
+    "content/images/home/logo-notion.svg",
+    "content/images/home/logo-zoom.svg",
+    "content/images/home/team-john.png",
+    "content/images/home/team-sarah.png",
+    "content/images/home/team-emily.png",
+    "content/images/home/team-brian.png",
+    "content/images/home/team-michael.png",
+    "content/images/home/team-jane.png",
+    "content/images/home/cta-illustration.svg"
+  ],
+  "siteOrigin": "https://example.com"
+}

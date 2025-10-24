@@ -1,0 +1,44 @@
+/* Import component-specific tokens */
+@import './cards-team-tokens.css';
+
+.cards-team {
+  padding: var(--cards-team-padding-block) var(--cards-team-padding-inline);
+}
+
+.cards-team > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cards-team-min-card-width), 1fr));
+  gap: var(--cards-team-gap);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.cards-team > ul > li {
+  border: var(--cards-team-card-border);
+  border-radius: var(--cards-team-card-border-radius);
+  background-color: var(--cards-team-card-bg);
+  padding: var(--cards-team-card-padding);
+}
+
+.cards-team .cards-card-image img {
+  width: var(--cards-team-image-size);
+  height: var(--cards-team-image-size);
+  border-radius: var(--cards-team-image-border-radius);
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.cards-team .cards-card-body h3,
+.cards-team .cards-card-body h4 {
+  font-size: var(--cards-team-name-font-size);
+  font-weight: var(--cards-team-name-font-weight);
+  margin: var(--spacing-md) 0 var(--spacing-sm) 0;
+}
+
+.cards-team .cards-card-body p {
+  font-size: var(--cards-team-text-font-size);
+  margin: 0;
+}

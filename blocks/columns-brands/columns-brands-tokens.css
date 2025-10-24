@@ -1,0 +1,29 @@
+/* Columns Brands Component Tokens */
+
+.columns-brands {
+  /* Layout */
+  --columns-brands-padding-block: var(--spacing-3xl);
+  --columns-brands-padding-inline: var(--spacing-xl);
+  --columns-brands-gap: var(--spacing-2xl);
+  --columns-brands-max-width: var(--container-max-width);
+
+  /* Colors */
+  --columns-brands-bg-color: var(--color-bg-primary);
+
+  /* Logo Sizing */
+  --columns-brands-logo-max-width: 120px;
+  --columns-brands-logo-height: 40px;
+  --columns-brands-logo-opacity: 0.6;
+  --columns-brands-logo-opacity-hover: 1;
+  --columns-brands-logo-filter: grayscale(100%);
+  --columns-brands-logo-filter-hover: grayscale(0%);
+  --columns-brands-logo-transition: var(--transition-normal);
+}
+
+@media (width >= 900px) {
+  .columns-brands {
+    --columns-brands-gap: var(--spacing-4xl);
+    --columns-brands-logo-max-width: 150px;
+    --columns-brands-logo-height: 48px;
+  }
+}

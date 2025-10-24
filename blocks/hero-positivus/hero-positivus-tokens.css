@@ -1,0 +1,43 @@
+/* Hero Positivus Component Tokens */
+
+.hero-positivus {
+  /* Layout */
+  --hero-positivus-padding-block: var(--spacing-4xl);
+  --hero-positivus-padding-inline: var(--spacing-xl);
+  --hero-positivus-min-height: 500px;
+  --hero-positivus-max-width: var(--container-max-width);
+  --hero-positivus-gap: var(--spacing-3xl);
+
+  /* Colors */
+  --hero-positivus-bg-color: var(--color-bg-primary);
+  --hero-positivus-text-color: var(--color-text-primary-dark);
+
+  /* Typography */
+  --hero-positivus-heading-font-size: var(--heading-font-size-xxl);
+  --hero-positivus-heading-font-weight: var(--font-weight-medium);
+  --hero-positivus-heading-line-height: var(--line-height-tight);
+  --hero-positivus-heading-color: var(--color-text-primary-dark);
+
+  --hero-positivus-text-font-size: var(--body-font-size-m);
+  --hero-positivus-text-line-height: var(--line-height-normal);
+  --hero-positivus-text-color: var(--color-text-primary-dark);
+
+  /* Button */
+  --hero-positivus-button-bg: var(--color-primary-black);
+  --hero-positivus-button-color: var(--color-primary-white);
+  --hero-positivus-button-padding: var(--spacing-lg) var(--spacing-2xl);
+  --hero-positivus-button-border-radius: var(--border-radius-lg);
+  --hero-positivus-button-hover-bg: var(--color-primary-dark);
+  --hero-positivus-button-transition: var(--transition-normal);
+
+  /* Illustration */
+  --hero-positivus-illustration-max-width: 500px;
+  --hero-positivus-illustration-width: 100%;
+}
+
+@media (width >= 900px) {
+  .hero-positivus {
+    --hero-positivus-padding-block: var(--spacing-5xl);
+    --hero-positivus-heading-font-size: var(--heading-font-size-xxl);
+  }
+}

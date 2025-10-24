@@ -1,0 +1,98 @@
+/* Import component-specific tokens */
+@import './cards-services-tokens.css';
+
+.cards-services {
+  padding: var(--cards-services-padding-block) var(--cards-services-padding-inline);
+  background-color: var(--cards-services-bg-color);
+}
+
+.cards-services > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cards-services-min-card-width), 1fr));
+  gap: var(--cards-services-gap);
+  max-width: var(--cards-services-max-width);
+  margin: 0 auto;
+}
+
+.cards-services > ul > li {
+  border: var(--cards-services-card-border);
+  border-radius: var(--cards-services-card-border-radius);
+  background-color: var(--cards-services-card-bg-light);
+  padding: var(--cards-services-card-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+/* Alternate card backgrounds */
+.cards-services > ul > li:nth-child(2),
+.cards-services > ul > li:nth-child(5) {
+  background-color: var(--cards-services-card-bg-accent);
+}
+
+.cards-services > ul > li:nth-child(3),
+.cards-services > ul > li:nth-child(6) {
+  background-color: var(--cards-services-card-bg-dark);
+  color: var(--color-text-secondary-light);
+}
+
+.cards-services .cards-card-body {
+  margin: 0;
+}
+
+.cards-services .cards-card-body h3,
+.cards-services .cards-card-body h4 {
+  font-size: var(--cards-services-heading-font-size);
+  font-weight: var(--cards-services-heading-font-weight);
+  line-height: var(--cards-services-heading-line-height);
+  margin: 0 0 var(--spacing-lg) 0;
+  background-color: var(--cards-services-heading-bg);
+  padding: var(--cards-services-heading-padding);
+  border-radius: var(--cards-services-heading-border-radius);
+  display: var(--cards-services-heading-display);
+  width: fit-content;
+}
+
+/* Dark cards should have white text on green headings */
+.cards-services > ul > li:nth-child(3) .cards-card-body h3,
+.cards-services > ul > li:nth-child(3) .cards-card-body h4,
+.cards-services > ul > li:nth-child(6) .cards-card-body h3,
+.cards-services > ul > li:nth-child(6) .cards-card-body h4 {
+  color: var(--color-text-primary-dark);
+}
+
+.cards-services .cards-card-body p {
+  font-size: var(--cards-services-text-font-size);
+  line-height: var(--cards-services-text-line-height);
+  color: inherit;
+  margin: 0;
+}
+
+.cards-services .cards-card-body a {
+  color: var(--cards-services-link-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  transition: color var(--cards-services-link-transition);
+}
+
+.cards-services .cards-card-body a:hover {
+  color: var(--cards-services-link-hover-color);
+}
+
+.cards-services .cards-card-image {
+  line-height: 0;
+  margin-bottom: var(--cards-services-icon-margin-bottom);
+}
+
+.cards-services > ul > li img {
+  width: var(--cards-services-icon-size);
+  height: var(--cards-services-icon-size);
+  object-fit: contain;
+  aspect-ratio: 1;
+}

@@ -1,0 +1,43 @@
+/* Import component-specific tokens */
+@import './hero-cta-tokens.css';
+
+.hero-cta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--hero-cta-gap);
+  padding: var(--hero-cta-padding-block) var(--hero-cta-padding-inline);
+  background-color: var(--hero-cta-bg-color);
+  border-radius: var(--hero-cta-border-radius);
+  min-height: var(--hero-cta-min-height);
+  align-items: center;
+}
+
+.hero-cta > div {
+  max-width: var(--hero-cta-max-width);
+  margin: 0 auto;
+}
+
+.hero-cta h2,
+.hero-cta h3 {
+  font-size: var(--hero-cta-heading-font-size);
+  font-weight: var(--hero-cta-heading-font-weight);
+  color: var(--hero-cta-text-color);
+}
+
+.hero-cta p {
+  font-size: var(--hero-cta-text-font-size);
+  color: var(--hero-cta-text-color);
+}
+
+.hero-cta a.button {
+  background-color: var(--hero-cta-button-bg);
+  color: var(--hero-cta-button-color);
+  padding: var(--hero-cta-button-padding);
+  border-radius: var(--hero-cta-button-border-radius);
+}
+
+@media (width >= 900px) {
+  .hero-cta > div:nth-child(3) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
