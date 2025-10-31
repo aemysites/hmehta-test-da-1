@@ -1,4 +1,2 @@
-mountpoints:
-  /:
-    url: https://content.da.live/aemdemos/hmehta-test-da-1/
-    type: markup
+# mountpoints:
+#   /: https://content.da.live/aemysites/hmehta-test-da-1/

@@ -1,0 +1,32 @@
+/* Callout Lokelma Green - Diagonal Banner */
+
+.callout-lokelma-green {
+  background: var(--lokelma-color-primary);
+  color: var(--lokelma-color-background);
+  padding: var(--lokelma-spacing-xl) var(--lokelma-spacing-m);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transform: skewY(-2deg);
+  margin: var(--lokelma-spacing-xl) 0;
+}
+
+.callout-lokelma-green > div {
+  transform: skewY(2deg);
+  max-width: var(--lokelma-max-width-content);
+  margin: 0 auto;
+}
+
+.callout-lokelma-green p {
+  font-family: var(--lokelma-font-family-body);
+  font-size: var(--lokelma-font-size-l);
+  font-weight: var(--lokelma-font-weight-regular);
+  line-height: var(--lokelma-line-height-normal);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .callout-lokelma-green p {
+    font-size: var(--lokelma-font-size-m);
+  }
+}

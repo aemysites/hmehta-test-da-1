@@ -1,0 +1,25 @@
+/**
+ * Quote Lokelma - Component-Specific Design Tokens
+ * Source: Figma node-id=677-6809 (text block)
+ * Extracted: 2025-10-31
+ */
+
+.quote-lokelma {
+  /* Container */
+  --quote-lokelma-bg-color: var(--lokelma-green-10);
+  --quote-lokelma-padding-y: 10px;
+  --quote-lokelma-padding-x: 0;
+  --quote-lokelma-max-width: var(--lokelma-max-width-content);
+  --quote-lokelma-text-align: center;
+
+  /* Typography */
+  --quote-lokelma-font-family: var(--lokelma-font-family-heading);
+  --quote-lokelma-font-size: var(--lokelma-font-size-xl);
+  --quote-lokelma-font-weight: var(--lokelma-font-weight-light);
+  --quote-lokelma-line-height: var(--lokelma-line-height-l);
+  --quote-lokelma-color: var(--lokelma-color-primary);
+  --quote-lokelma-text-indent: 28px;
+
+  /* Spacing */
+  --quote-lokelma-margin: 0 auto;
+}

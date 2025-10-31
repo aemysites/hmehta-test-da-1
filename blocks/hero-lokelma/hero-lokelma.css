@@ -1,0 +1,56 @@
+/* Hero LOKELMA Block - From Figma */
+/* Source: https://www.figma.com/design/iuXMtneLhmoFLDDNavxfNN/LOKELMA-myAZ-integration_Phase4?node-id=677-7517 */
+
+.hero-lokelma {
+  position: relative;
+  width: 100%;
+  min-height: 285px;
+  background: var(--lokelma-color-secondary);
+  background-image: url('../../content/images/lokelma-hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: var(--lokelma-spacing-xxl) var(--lokelma-content-padding-x);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-lokelma-content {
+  max-width: var(--lokelma-max-width-content);
+  width: 100%;
+}
+
+.hero-lokelma-title {
+  font-family: var(--lokelma-font-family-heading);
+  font-size: var(--lokelma-font-size-display-m);
+  font-weight: var(--lokelma-font-weight-medium);
+  line-height: var(--lokelma-line-height-xxxl);
+  color: var(--az-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero-lokelma {
+    padding: var(--lokelma-spacing-xl) var(--lokelma-spacing-xl);
+  }
+
+  .hero-lokelma-title {
+    font-size: var(--lokelma-font-size-display-s);
+    line-height: var(--lokelma-line-height-xxl);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-lokelma {
+    min-height: 200px;
+    padding: var(--lokelma-spacing-l) var(--lokelma-spacing-m);
+  }
+
+  .hero-lokelma-title {
+    font-size: var(--lokelma-font-size-xxxl);
+    line-height: var(--lokelma-line-height-xl);
+  }
+}

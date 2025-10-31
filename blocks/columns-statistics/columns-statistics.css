@@ -1,0 +1,110 @@
+/* Columns-Statistics Block - From Figma */
+/* Source: https://www.figma.com/design/iuXMtneLhmoFLDDNavxfNN/LOKELMA-myAZ-integration_Phase4?node-id=677-7545 */
+
+.columns-statistics {
+  padding: var(--lokelma-spacing-xl) 0;
+}
+
+.statistics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--lokelma-spacing-xl);
+  max-width: var(--lokelma-max-width-content);
+  margin: 0 auto;
+}
+
+.statistic-item {
+  position: relative;
+  width: 326px;
+  height: 326px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistic-chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.statistic-chart img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.statistic-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--lokelma-spacing-s);
+}
+
+.statistic-content p {
+  margin: 0;
+}
+
+.statistic-content strong,
+.statistic-content .percentage {
+  font-family: var(--lokelma-font-family-heading);
+  font-size: var(--lokelma-font-size-display-m);
+  font-weight: var(--lokelma-font-weight-extrabold);
+  line-height: 1.5;
+  color: var(--lokelma-color-primary);
+  letter-spacing: -0.02em;
+}
+
+.statistic-content .label {
+  font-family: var(--lokelma-font-family-heading);
+  font-size: var(--lokelma-font-size-l);
+  font-weight: var(--lokelma-font-weight-semibold);
+  color: var(--lokelma-color-primary);
+  line-height: var(--lokelma-line-height-m);
+}
+
+.statistic-content .prefix {
+  font-family: var(--lokelma-font-family-heading);
+  font-size: var(--lokelma-font-size-l);
+  font-weight: var(--lokelma-font-weight-extrabold);
+  color: var(--lokelma-color-primary);
+  line-height: var(--lokelma-line-height-l);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .statistics-container {
+    flex-wrap: wrap;
+    gap: var(--lokelma-spacing-l);
+  }
+
+  .statistic-item {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    flex-direction: column;
+    gap: var(--lokelma-spacing-m);
+  }
+
+  .statistic-item {
+    width: 250px;
+    height: 250px;
+  }
+
+  .statistic-content strong,
+  .statistic-content .percentage {
+    font-size: var(--lokelma-font-size-display-s);
+  }
+}

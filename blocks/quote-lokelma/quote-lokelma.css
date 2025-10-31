@@ -1,0 +1,38 @@
+/* Import component-specific tokens */
+@import './quote-lokelma-tokens.css';
+
+.quote-lokelma {
+  background-color: var(--quote-lokelma-bg-color);
+  padding: var(--quote-lokelma-padding-y) var(--quote-lokelma-padding-x);
+  text-align: var(--quote-lokelma-text-align);
+}
+
+.quote-lokelma blockquote {
+  margin: var(--quote-lokelma-margin);
+  max-width: var(--quote-lokelma-max-width);
+  padding: 0;
+}
+
+.quote-lokelma blockquote .quote-quotation {
+  font-family: var(--quote-lokelma-font-family);
+  font-size: var(--quote-lokelma-font-size);
+  font-weight: var(--quote-lokelma-font-weight);
+  line-height: var(--quote-lokelma-line-height);
+  color: var(--quote-lokelma-color);
+}
+
+.quote-lokelma blockquote .quote-quotation > :first-child {
+  text-indent: var(--quote-lokelma-text-indent);
+}
+
+/* Remove quote marks since this is more of a statement */
+.quote-lokelma blockquote .quote-quotation p:first-child::before,
+.quote-lokelma blockquote .quote-quotation p:last-child::after {
+  content: '';
+}
+
+.quote-lokelma blockquote .quote-attribution {
+  text-align: right;
+  font-family: var(--quote-lokelma-font-family);
+  color: var(--quote-lokelma-color);
+}

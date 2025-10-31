@@ -1,27 +1,95 @@
+/* Cards Block - Resource Cards with Teal Background */
+
+.cards {
+  padding: var(--lokelma-spacing-xl) 0;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 var(--lokelma-spacing-m);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: var(--lokelma-spacing-l);
+  max-width: var(--lokelma-max-width-content);
+  margin: 0 auto;
+}
+
+.cards.columns-3 > ul {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
-}
-
-.cards .cards-card-body {
-  margin: 16px;
+  background-color: var(--lokelma-color-primary);
+  border-radius: var(--lokelma-border-radius);
+  display: flex;
+  flex-direction: column;
+  padding: var(--lokelma-spacing-l);
+  text-align: center;
+  min-height: 300px;
 }
 
 .cards .cards-card-image {
   line-height: 0;
+  margin-bottom: var(--lokelma-spacing-m);
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.cards .cards-card-body {
+  color: var(--lokelma-color-background);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .cards-card-body strong {
+  display: block;
+  font-family: var(--lokelma-font-family-heading);
+  font-size: var(--lokelma-font-size-l);
+  font-weight: var(--lokelma-font-weight-medium);
+  margin-bottom: var(--lokelma-spacing-s);
+  color: var(--lokelma-color-background);
+}
+
+.cards .cards-card-body p {
+  font-family: var(--lokelma-font-family-body);
+  font-size: var(--lokelma-font-size-m);
+  line-height: var(--lokelma-line-height-normal);
+  margin-bottom: var(--lokelma-spacing-m);
+  flex: 1;
+}
+
+.cards .cards-card-body a {
+  display: inline-block;
+  background-color: var(--lokelma-color-accent);
+  color: var(--lokelma-color-text);
+  padding: var(--lokelma-spacing-s) var(--lokelma-spacing-l);
+  border-radius: var(--lokelma-border-radius);
+  text-decoration: none;
+  font-weight: var(--lokelma-font-weight-medium);
+  font-family: var(--lokelma-font-family-heading);
+  margin-top: auto;
+}
+
+.cards .cards-card-body a:hover {
+  background-color: var(--lokelma-color-accent-dark, #e5a414);
+}
+
+@media (max-width: 900px) {
+  .cards.columns-3 > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards.columns-3 > ul,
+  .cards > ul {
+    grid-template-columns: 1fr;
+  }
 }

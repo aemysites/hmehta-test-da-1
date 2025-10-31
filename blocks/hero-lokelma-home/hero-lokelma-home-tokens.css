@@ -1,0 +1,78 @@
+/**
+ * Hero Lokelma Home - Component-Specific Design Tokens
+ * Source: Figma node-id=677-6727 (hero_banner)
+ * Extracted: 2025-10-31
+ */
+
+.hero-lokelma-home {
+  /* Container */
+  --hero-lokelma-home-height: 550px;
+  --hero-lokelma-home-max-width: 1920px;
+  --hero-lokelma-home-padding: 0;
+
+  /* Background */
+  --hero-lokelma-home-bg-color: var(--lokelma-color-background);
+  --hero-lokelma-home-bg-position: center center;
+  --hero-lokelma-home-bg-size: cover;
+  --hero-lokelma-home-bg-repeat: no-repeat;
+
+  /* Content Positioning */
+  --hero-lokelma-home-content-max-width: var(--lokelma-max-width-content);
+  --hero-lokelma-home-content-padding-x: var(--lokelma-spacing-xxxl);
+  --hero-lokelma-home-content-padding-y: var(--lokelma-spacing-xxl);
+  --hero-lokelma-home-content-align: center;
+
+  /* Logo */
+  --hero-lokelma-home-logo-position-top: var(--lokelma-spacing-m);
+  --hero-lokelma-home-logo-position-right: var(--lokelma-spacing-xxxl);
+  --hero-lokelma-home-logo-max-width: 300px;
+
+  /* Heading */
+  --hero-lokelma-home-heading-font-family: var(--lokelma-font-family-heading);
+  --hero-lokelma-home-heading-font-size: var(--lokelma-font-size-display-s);
+  --hero-lokelma-home-heading-font-weight: var(--lokelma-font-weight-regular);
+  --hero-lokelma-home-heading-line-height: var(--lokelma-line-height-xl);
+  --hero-lokelma-home-heading-color: var(--lokelma-color-primary);
+  --hero-lokelma-home-heading-margin: 0 0 var(--lokelma-spacing-m) 0;
+  --hero-lokelma-home-heading-text-align: center;
+
+  /* Subtext */
+  --hero-lokelma-home-subtext-font-family: var(--lokelma-font-family-body);
+  --hero-lokelma-home-subtext-font-size: var(--lokelma-font-size-m);
+  --hero-lokelma-home-subtext-font-weight: var(--lokelma-font-weight-regular);
+  --hero-lokelma-home-subtext-line-height: var(--lokelma-line-height-m);
+  --hero-lokelma-home-subtext-color: var(--lokelma-color-text);
+  --hero-lokelma-home-subtext-font-style: italic;
+  --hero-lokelma-home-subtext-text-align: center;
+  --hero-lokelma-home-subtext-max-width: 900px;
+  --hero-lokelma-home-subtext-margin: 0 auto;
+
+  /* Slider Indicators */
+  --hero-lokelma-home-indicator-container-position-bottom: var(--lokelma-spacing-m);
+  --hero-lokelma-home-indicator-container-justify: center;
+  --hero-lokelma-home-indicator-container-gap: 10px;
+  --hero-lokelma-home-indicator-width: 30px;
+  --hero-lokelma-home-indicator-height: 6px;
+  --hero-lokelma-home-indicator-bg-inactive: var(--az-white);
+  --hero-lokelma-home-indicator-bg-active: var(--lokelma-pink);
+  --hero-lokelma-home-indicator-border-radius: 3px;
+
+  /* Overlay (if needed for text legibility) */
+  --hero-lokelma-home-overlay-bg: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+  --hero-lokelma-home-overlay-width: 60%;
+  --hero-lokelma-home-overlay-position: right;
+
+  /* Responsive Breakpoints */
+  --hero-lokelma-home-breakpoint-tablet: 900px;
+  --hero-lokelma-home-breakpoint-mobile: 600px;
+
+  /* Responsive - Tablet */
+  --hero-lokelma-home-heading-font-size-tablet: var(--lokelma-font-size-xxxl);
+  --hero-lokelma-home-content-padding-x-tablet: var(--lokelma-spacing-xl);
+
+  /* Responsive - Mobile */
+  --hero-lokelma-home-height-mobile: 400px;
+  --hero-lokelma-home-heading-font-size-mobile: var(--lokelma-font-size-xxl);
+  --hero-lokelma-home-content-padding-x-mobile: var(--lokelma-spacing-m);
+  --hero-lokelma-home-subtext-font-size-mobile: var(--lokelma-font-size-s);
+}

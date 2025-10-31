@@ -1,0 +1,74 @@
+/* Callout LOKELMA Block - From Figma */
+/* Source: https://www.figma.com/design/iuXMtneLhmoFLDDNavxfNN/LOKELMA-myAZ-integration_Phase4?node-id=677-7565 */
+
+.callout-lokelma {
+  position: relative;
+  background: var(--lokelma-color-secondary);
+  border-radius: 0;
+  padding: var(--lokelma-spacing-m) var(--lokelma-spacing-l);
+  margin: var(--lokelma-spacing-l) auto;
+  max-width: 996px;
+  min-height: 102px;
+  overflow: hidden;
+}
+
+/* Decorative corner accent */
+.callout-lokelma::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 80px 80px 0;
+  border-color: transparent var(--lokelma-yellow) transparent transparent;
+}
+
+.callout-lokelma-content {
+  font-family: var(--lokelma-font-family-body);
+  font-size: var(--lokelma-font-size-xl);
+  font-weight: var(--lokelma-font-weight-bold);
+  line-height: var(--lokelma-line-height-tight);
+  color: var(--az-white);
+  position: relative;
+  z-index: 1;
+}
+
+.callout-lokelma-content p {
+  margin: 0 0 var(--lokelma-spacing-xs) 0;
+}
+
+.callout-lokelma-content p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-lokelma-content sup {
+  font-size: var(--lokelma-font-size-m);
+  vertical-align: super;
+}
+
+.callout-lokelma-content strong {
+  font-weight: var(--lokelma-font-weight-bold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .callout-lokelma {
+    padding: var(--lokelma-spacing-m) var(--lokelma-spacing-s);
+  }
+
+  .callout-lokelma-content {
+    font-size: var(--lokelma-font-size-m);
+  }
+
+  .callout-lokelma::before {
+    border-width: 0 60px 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .callout-lokelma::before {
+    border-width: 0 40px 40px 0;
+  }
+}

@@ -1,0 +1,33 @@
+/* Text-Centered Block - From Figma */
+/* Source: https://www.figma.com/design/iuXMtneLhmoFLDDNavxfNN/LOKELMA-myAZ-integration_Phase4?node-id=677-7543 */
+
+.text-centered {
+  padding: var(--lokelma-spacing-xl) 0;
+}
+
+.text-centered-container {
+  max-width: var(--lokelma-max-width-content);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-centered-content {
+  font-family: var(--lokelma-font-family-heading);
+  font-size: var(--lokelma-font-size-xxl);
+  font-weight: var(--lokelma-font-weight-extrabold);
+  line-height: var(--lokelma-line-height-xl);
+  color: var(--lokelma-color-text);
+}
+
+.text-centered-content sup {
+  font-size: var(--lokelma-font-size-m);
+  vertical-align: super;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-centered-content {
+    font-size: var(--lokelma-font-size-xl);
+    line-height: var(--lokelma-line-height-l);
+  }
+}
